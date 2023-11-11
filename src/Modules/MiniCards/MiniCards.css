@@ -1,0 +1,12 @@
+.extra-line {
+    background-color: #f9f9f9;
+  }
+  img:hover{
+    width: 90px;
+  }
+  h6 , p {
+    font-weight: bold;
+  }
+  h6:hover{
+    color: red;
+  }

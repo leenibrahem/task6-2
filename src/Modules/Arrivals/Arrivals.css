@@ -1,0 +1,73 @@
+.main-slider-container {
+    max-width: fit-content;
+ 
+
+  }
+  .Arrivals{
+  margin-top: 200px;
+  margin-bottom: 50px;
+  }
+  .swiper-container {
+    left: 0;
+  }
+  .main-slider-container .prev-btn-container {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    cursor: pointer;
+    z-index: 99999;
+  }
+  .main-slider-container .prev-btn {
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    transform: rotate(-45deg) translate(3px, 3px);
+  }
+  .main-slider-container .next-btn-container {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+    cursor: pointer;
+    z-index: 99999;
+  }
+  .main-slider-container .next-btn {
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #FFF;
+    border-bottom: 2px solid #FFF;
+    transform: rotate(-45deg) translate(-1px, -1px);
+  }
+  .main-slider-container .prev-btn-container:hover, 
+  .main-slider-container .next-btn-container:hover {
+    background-color: var(--text-hover) !important;
+  }
+  .new-arrivals .swipe-card {
+    width: 235px;
+    height: 457px;
+    background-color: #f6f6f6;
+  }
+  .new-arrivals .swipe-card:hover {
+    border: 1px solid red !important;
+  }
+  .new-arrivals .swipe-card img {
+    height: 279.59px;
+  }
+  .add-to-cart {
+    position: absolute;
+    bottom: -30px;
+    cursor: pointer;
+  }
+  .swipe-card:hover .add-to-cart {
+    bottom: 0;
+  }
+  .add-to-cart:hover {
+    background-color: var(--text-hover) !important;
+  }
+  .stars::after {
+  content: "\2605\2605\2605\2605\2605";
+  background-color: #ddd;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }

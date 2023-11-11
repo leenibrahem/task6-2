@@ -1,0 +1,130 @@
+@media screen and (min-width: 992px){
+    .possibilities {
+      height: 750px;
+    }
+  }
+  .possibilities .dot {
+    position: absolute;
+    top: 61%;
+    font-size: 10px;
+    width: fit-content;
+  }
+  .possibilities .dot span {
+    border-radius: 50%;
+    animation: dot 2s infinite;
+    cursor: pointer;
+  }
+  .pop::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #000;
+    transform: translateX(-50%);
+  }
+  .possibilities .dot:nth-child(even) .pop::before {
+    height: 100px;
+    top: -112%;
+    left: 50%;
+  }
+  .possibilities .dot:nth-child(odd) .pop::before {
+    height: 200px;
+    top: -196%;
+    left: 52%;
+  }
+  .possibilities .pop-container {
+    width: 275px;
+  }
+  .possibilities .dot:nth-child(odd) .pop-container {
+    top: 220px;
+    left: -125px;
+  }
+  .possibilities .dot:nth-child(even) .pop-container {
+    position: absolute;
+    top: 110px;
+    left: -120px;
+  }
+  
+  .possibilities .close-modal-btn {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .possibilities .close-modal-btn:hover {
+    background-color: var(--text-hover) !important;
+  }
+  /* First dot */
+  .possibilities .dot:nth-child(2) {
+    left: 13%;
+  }
+  .possibilities .dot:nth-child(2) span {
+    animation-delay: 1s;
+  }
+  /* Second dot */
+  .possibilities .dot:nth-child(3) {
+    left: 36%;
+  }
+  .possibilities .dot:nth-child(3) span {
+    animation-delay: 3s;
+  }
+  
+  /* Third dot */
+  .possibilities .dot:nth-child(4) {
+    left: 58%;
+  }
+  .possibilities .dot:nth-child(4) span {
+    animation-delay: 2s;
+  }
+  .possibilities .dot:nth-child(4) .pop::before {
+    height: 100px;
+    top: -95%;
+    left: 50%;
+  }
+  /* Fourth dot */
+  .possibilities .dot:nth-child(5) {
+    left: 86%;
+  }
+  .possibilities .dot:nth-child(5) span {
+    animation-delay: 5s;
+  }
+  @media screen and (max-width: 768px){
+    .possibilities .pop-container {
+      width: 130px;
+    }
+    .possibilities .dot:nth-child(even) .pop::before {
+      height: 100px;
+      top: -96%;
+      left: 50%;
+    }
+    .possibilities .dot:nth-child(odd) .pop::before {
+      height: 200px;
+      top: -163%;
+      left: 52%;
+    }
+    .possibilities .dot:nth-child(odd) .pop-container {
+      top: 252px;
+      left: -50px;
+    }
+    .possibilities .dot:nth-child(even) .pop-container {
+      top: 147px;
+      left: -48px;
+    }
+    .possibilities .dot:nth-child(4) .pop::before {
+      height: 100px;
+      top: -96%;
+      left: 50%;
+    }
+  }
+  .possibilities .pop-container a {
+    font-size: 18px;
+  }
+  
+  @keyframes dot {
+    from {
+      box-shadow: 0 0 0 0px #ff00004b;
+    }
+    to {
+      box-shadow: 0 0 0 8px #ff000080;
+    }
+  }

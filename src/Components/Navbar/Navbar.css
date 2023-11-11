@@ -1,0 +1,33 @@
+.navbar .nav-link {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+    color:red;
+
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+}
+.icons .nav-item:hover{
+    color: red;
+    cursor: pointer;
+}
+.dropdown-menu .row{
+    padding: 20px;
+    width: 70vw;
+
+}
+.dropdown-item a .first{
+    font-weight: bold;
+}
+.dropdown-menu img{
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
